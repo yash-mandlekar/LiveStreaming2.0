@@ -1,22 +1,62 @@
 body {
-  padding: 30px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* padding: 30px; */
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00b7ff;
+  /* color: white; */
   text-decoration: none;
 }
 
-table, tr, td, th {margin: 0;border: 0;padding: 5px;border-collapse: collapse;}
+table,
+tr,
+td,
+th {
+  margin: 0;
+  border: 0;
+  padding: 5px;
+  border-collapse: collapse;
+}
 
 li {
-    list-style-type: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 3px 3px 3px #888;
-    padding: 5px 5px 5px 5px;
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 3px 3px 3px #888;
+  border-radius: 30px;
+  height: 80px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.start-stop {
+  background-color: skyblue;
+  margin-top: 30px;
+}
+
+.three {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.watch-live {
+  font-size: 55px;
+}
+
+#refreshcnt {
+  margin-top: 10px;
+  width: 200px;
+}
+
+#refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li:hover {
@@ -25,20 +65,41 @@ li:hover {
 }
 
 .localStream {
-  display: inline-block;
-  top: 15px;
-  right: 15px;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.localStream video {
-    border: 5px solid rgb(119, 119, 119);
-    outline: 0px none;
-    height: 240px;
-    width: 320px;
+.localStream p {
+  font-size: 35px;
 }
 
-.remoteStreams{
+.localStream p input {
+  height: 70px;
+  width: 605px;
+  font-size: 35px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+
+#localVideo {
+  outline: 0px none;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.showvideo {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.remoteStreams {
+  width: 100%;
   display: inline-block;
   top: 15px;
   right: 15px;
@@ -52,14 +113,14 @@ li:hover {
 }
 
 .remoteStreams .selected {
-  background-color: #444 !important;
-  text-shadow:none;
+  /* background-color: #444 !important; */
+  text-shadow: none;
   border-right-color: #aaa;
   border-left: none;
-  border-radius: 3px 3px 3px 3px; 
-  box-shadow:inset 1px 2px 6px #070707;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: inset 1px 2px 6px #070707;
 }
 
 .footer {
-   clear: both;
+  clear: both;
 }
