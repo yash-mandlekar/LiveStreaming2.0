@@ -4,7 +4,7 @@ module.exports = function(app, streams) {
   var index = function(req, res) {
     res.render('index', { 
                           title: 'Project RTC', 
-                          header: 'WebRTC live streaming',
+                          header: 'Welcome to Lokdesh live streaming',
                           username: 'Username',
                           share: 'Share this link',
                           footer: 'pierre@chabardes.net',
