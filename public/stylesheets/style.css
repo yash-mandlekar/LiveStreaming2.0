@@ -239,7 +239,6 @@ li:hover {
 .viewbody {
   display: flex;
   /* background-color: black; */
-  color: white;
   width: 100vw;
   overflow: auto;
   margin-top: 15px;
