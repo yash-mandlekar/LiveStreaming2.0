@@ -1,12 +1,51 @@
 <div class="localStream" ng-controller="LocalStreamController as localStream">
-	<p>
-		<%= username %> : <input ng-model="localStream.name" />
-	</p>
-	<video id="localVideo" muted="muted" autoplay="true"></video>
-	<li class="start-stop" ng-click="localStream.toggleCam()">
-		<a href>{{ localStream.cameraIsOn ? 'Stop' : 'Go Live' }}</a>
-	</li>
-	<!-- <div ng-show="localStream.cameraIsOn">
+  <p><%= username %> : <input ng-model="localStream.name" /></p>
+  <video id="localVideo" muted="muted" autoplay="true"></video>
+  <div class="topbar">
+    <div class="profilecnt">
+      <img
+        src="https://media.istockphoto.com/vectors/default-avatar-profile-icon-vector-vector-id1337144146?k=20&m=1337144146&s=612x612&w=0&h=Mz4oPre6r3fccgvm5lyd22S5VFqTnrEYRJj9clL3Q1o="
+        alt="Avatar"
+        class="profileimg"
+      />
+      <div class="profiletxt">{{ localStream.name }}</div>
+    </div>
+    <div class="lokdesh-live">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/41/Red_circle.gif"
+        alt=""
+        class="live-gif"
+      />
+      LIVE
+    </div>
+    <button class="close">X</button>
+  </div>
+  <div class="bottombar">
+    <div class="req-to-admin">
+      <img
+        src="../images/Screenshot (3).png"
+        alt=""
+      />
+    </div>
+    <div class="inpcnt">
+      <input
+        type="text"
+        class="inp"
+        name=""
+        placeholder="व्यवस्थापक को संदेश भेजें..."
+        id=""
+      />
+      <img
+        src="https://www.pngkey.com/png/detail/20-209490_png-file-podcast-microphone-logo-png.png"
+        alt=""
+        class="mic"
+      />
+    </div>
+  </div>
+  <li class="start-stop" ng-click="localStream.toggleCam()">
+    <a href>{{ localStream.cameraIsOn ? "Stop" : "Go Live" }}</a>
+  </li>
+  <!-- <div ng-show="localStream.cameraIsOn">
 		<p>
 			<%= share %>:
 		</p>
