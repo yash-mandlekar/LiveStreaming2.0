@@ -30,13 +30,28 @@
     var h1 = document.querySelector("h1");
     var p = document.querySelector("p");
     var remoteStreams = document.querySelector(".remoteStreams");
+    // var close = document.querySelector(".close");
+    function myFunction() {
+      var x = document.getElementById("localVideo");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        bottombar.style.display = "none";
+        topbar.style.display = "none";
+        x.style.display = "none";
+        h1.style.display = "initial";
+        p.style.display = "initial";
+        start.style.display = "flex";
+        remoteStreams.style.display = "initial";
+      }
+    }
     start.addEventListener("click", function () {
       var video = document.querySelector("#localVideo");
       bottombar.style.display = "flex";
+      topbar.style.display = "flex";
       video.style.display = "block";
       h1.style.display = "none";
       p.style.display = "none";
-      topbar.style.display = "flex";
       start.style.display = "none";
       remoteStreams.style.display = "none";
     });

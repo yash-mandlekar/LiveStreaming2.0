@@ -18,14 +18,11 @@
       />
       LIVE
     </div>
-    <button class="close">X</button>
+    <button class="close" onclick="myFunction()">X</button>
   </div>
   <div class="bottombar">
     <div class="req-to-admin">
-      <img
-        src="../images/Screenshot (3).png"
-        alt=""
-      />
+      <img src="../images/Screenshot (3).png" alt="" />
     </div>
     <div class="inpcnt">
       <input
@@ -43,7 +40,7 @@
     </div>
   </div>
   <li class="start-stop" ng-click="localStream.toggleCam()">
-    <a href>{{ localStream.cameraIsOn ? "Stop" : "Go Live" }}</a>
+    <a href>{{ localStream.cameraIsOn ? "Go Live" : "Go Live" }}</a>
   </li>
   <!-- <div ng-show="localStream.cameraIsOn">
 		<p>
