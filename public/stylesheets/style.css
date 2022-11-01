@@ -133,7 +133,11 @@ li:hover {
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  padding: 20px;
+}
+.req-to-admin img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 .inpcnt {
   width: 85%;
