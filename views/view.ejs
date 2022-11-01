@@ -22,7 +22,9 @@
   <script>
     var table = document.querySelector("table");
     var midcontainer = document.querySelector(".midcontainer");
-    var refreshcnt = document.querySelector("#refreshcnt");
+    var refreshcnt = document.querySelector("#refreshcnt"); 
+    var remoteVideosContainer = document.querySelector("#remoteVideosContainer"); 
+    var back = document.querySelector(".back");
     setInterval(() => {
       refreshcnt.click();
     }, 1000);
@@ -32,7 +34,13 @@
         e.target.className === "three ng-binding"
       ) {
         midcontainer.style.display = "none";
+        back.style.display = "initial";
       }
+    });
+    back.addEventListener("click", function () {
+      midcontainer.style.display = "initial";
+      back.style.display = "none";
+      remoteVideosContainer.innerHTML = "";
     });
   </script>
 </html>
