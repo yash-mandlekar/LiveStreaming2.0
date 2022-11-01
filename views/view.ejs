@@ -22,8 +22,11 @@
   <script>
     var table = document.querySelector("table");
     var midcontainer = document.querySelector(".midcontainer");
+    var refreshcnt = document.querySelector("#refreshcnt");
+    setInterval(() => {
+      refreshcnt.click();
+    }, 1000);
     table.addEventListener("click", function (e) {
-      console.log("classname --- >  ", e.target.className);
       if (
         e.target.className === "viewimg" ||
         e.target.className === "three ng-binding"
