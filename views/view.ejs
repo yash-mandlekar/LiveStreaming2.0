@@ -19,4 +19,17 @@
   <body>
     <div class="container"><%= include remote-streams %></div>
   </body>
+  <script>
+    var table = document.querySelector("table");
+    var midcontainer = document.querySelector(".midcontainer");
+    table.addEventListener("click", function (e) {
+      console.log("classname --- >  ", e.target.className);
+      if (
+        e.target.className === "viewimg" ||
+        e.target.className === "three ng-binding"
+      ) {
+        midcontainer.style.display = "none";
+      }
+    });
+  </script>
 </html>
